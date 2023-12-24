@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mis Lugares</string>
+
+    <!-- activity_main -->
+    <string name="mostrar"> Mostrar Lugares </string>
+    <string name="preferencias"> Preferencias </string>
+    <string name="acerca_de"> Acerca De </string>
+    <string name="salir"> Salir </string>
+
+    <!-- edicion_lugar -->
+    <string name="name"> Nombre </string>
+    <string name="name_int"> Algo que identifique al lugar </string>
+    <string name="type"> Tipo </string>
+    <string name="direction"> Direcciòn </string>
+    <string name="direction_hint"> direccion del lugar </string>
+    <string name="telefono"> Telefono </string>
+    <string name="telefono_hint"> telefono para contactar </string>
+    <string name="url"> URL </string>
+    <string name="comentario"> Comentarios </string>
+    <string name="comentario_hint"> Introduce tus notas </string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel" />
+
+    <EditText
+        android:id="@+id/in_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/name_int"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/txt_tipo"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        app:layout_constraintBottom_toBottomOf="@+id/tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_name" />
+
+    <Spinner
+        android:id="@+id/tipo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toEndOf="@+id/txt_tipo"
+        app:layout_constraintTop_toBottomOf="@+id/in_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/direction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tipo"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel"/>
+
+    <EditText
+        android:id="@+id/in_direction"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/direction_hint"
+        app:layout_constraintTop_toBottomOf="@+id/txt_direction"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txt_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_direction"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel"
+        app:layout_constraintBottom_toTopOf="@id/txt_url"/>
+
+    <EditText
+        android:id="@+id/in_number"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/txt_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/in_direction"
+        android:hint="@string/telefono_hint"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_number"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel"/>
+
+    <EditText
+        android:id="@+id/in_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_url"
+        android:hint="@string/url"
+        android:inputType="textUri"/>
+
+    <TextView
+        android:id="@+id/txt_comentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comentario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_url"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel"/>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:id="@+id/in_comentarios"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_comentarios"
+        android:hint="@string/comentario_hint"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
