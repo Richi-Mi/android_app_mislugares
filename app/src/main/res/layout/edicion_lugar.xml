@@ -7,12 +7,12 @@
 
     <TextView
         android:id="@+id/name"
+        style="@style/TextAppearance.AppCompat.MisLugaresLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/TextAppearance.AppCompat.MisLugaresLabel" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/in_name"
