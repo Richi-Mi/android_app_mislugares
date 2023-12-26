@@ -15,7 +15,7 @@
     <string name="direction_hint"> direccion del lugar </string>
     <string name="telefono"> Telefono </string>
     <string name="telefono_hint"> telefono para contactar </string>
-    <string name="url"> URL </string>
+    <string name="url" translatable="false"> URL </string>
     <string name="comentario"> Comentarios </string>
     <string name="comentario_hint"> Introduce tus notas </string>
 </resources>

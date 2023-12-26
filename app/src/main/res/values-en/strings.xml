@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Places</string>
+
+    <!-- activity_main -->
+    <string name="mostrar">Show Places</string>
+    <string name="preferencias">Preferences</string>
+    <string name="acerca_de">About</string>
+    <string name="salir">" Exit"</string>
+
+    <!-- edicion_lugar -->
+    <string name="name">" Name"</string>
+    <string name="name_int">Someone that identified that place</string>
+    <string name="type">Type</string>
+    <string name="direction">Direction</string>
+    <string name="direction_hint">Place direction</string>
+    <string name="telefono">phone number</string>
+    <string name="telefono_hint">phone number</string>
+    <string name="comentario">" Comennts"</string>
+    <string name="comentario_hint">" Put here your notes"</string>
+</resources>
